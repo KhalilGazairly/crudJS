@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curd Form</title>
+    <!-- bootstrap file -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Normalize Css -- render all elements normal  -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Main Css style  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Fonts  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container p-y">
+        <div class="w-50 m-auto card p-5">
+            <h2 class="m-auto"> CRUD System</h2>
+            <div class="form-group">
+                <label for="productName">Product Name:</label>
+                <input class="form-control" type="text" id="productName">
+            </div>
+            <div class="form-group">
+                <label for="productPrice">Product Price:</label>
+                <input class="form-control" type="number" id="productPrice">
+            </div>
+            
+            <div class="form-group">
+                <label for="productCatg">Product Catogrey:</label>
+                <input class="form-control" type="text" id="productCatg">
+            </div>
+            
+            <div class="form-group">
+                <label for="productDesc">Product Description:</label>
+                <textarea class="form-control" type="text" id="productDesc"></textarea>
+            </div>
+
+            <button onclick="addProduct()" class="btn btn-info"> Add Prouduct </button>
+            <button onclick="updateProduct()" class="btn btn-success d-none"> Update Prouduct </button>
+        </div>
+    </div>
+
+    <div class="w-75 m-auto text-center py-3">
+        <input type="text" onkeyup="search()" class="form-control w-75 m-auto" placeholder="Search .." id="searchInput">
+    
+        <table class="table my-5">
+            <thead>
+                <th>Index</th>
+                <th>Product Name</th>
+                <th>Product Price</th>
+                <th>Product Category</th>
+                <th>Product Description</th>
+                <th>Update</th>
+                <th>Delelte</th>
+            </thead>
+            <tbody  id="tableBody">
+                
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="main.js"></script>
+</body>
+</html>

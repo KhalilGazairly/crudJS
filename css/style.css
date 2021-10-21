@@ -1,0 +1,71 @@
+
+/* Sections of website
+    - variables
+    - Global Rules
+    - common Sections
+    - Navbar Section
+    - Header Section
+    - About Section 
+    - Prtofolio Section 
+    - Skills Section 
+    - Contact Section 
+    - Footer Section 
+    - Media Section 
+------------------     */
+
+/* Start Variables  */
+:root{
+    --main-color:#ff86b9cc;
+    --secondary-color:#006ba1;
+    --head-color:rgb(216, 216, 216);
+}
+/* End Variables  */
+
+/* Start Global rules  */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+}
+
+.container{
+    width:80%;
+    margin: auto;
+}
+/* End Global rules  */
+
+/* Start common Sections */
+.layout{
+    background-color: #ef106d1a ;
+}
+
+.p-y{
+    padding-top: 50px;
+}
+
+.shadwo{
+    box-shadow: 4px 5px 6px -3px rgb(27 26 26 / 51%);
+}
+
+.card {
+    margin-bottom: 20px ​!important;
+    box-shadow: -3px 5px 33px -2px rgb(0 0 0 / 18%);
+    background-color: #dca4a99e;
+}
+
+.card h2{
+    color: rgb(2, 39, 39);;
+}
+
+/* End common Sections */
