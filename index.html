@@ -22,34 +22,37 @@
 <body>
 
     <div class="container p-y">
-        <div class="w-50 m-auto card p-5">
-            <h2 class="m-auto"> CRUD System</h2>
-            <div class="form-group">
-                <label for="productName">Product Name:</label>
-                <input class="form-control" type="text" id="productName">
-            </div>
-            <div class="form-group">
-                <label for="productPrice">Product Price:</label>
-                <input class="form-control" type="number" id="productPrice">
-            </div>
-            
-            <div class="form-group">
-                <label for="productCatg">Product Catogrey:</label>
-                <input class="form-control" type="text" id="productCatg">
-            </div>
-            
-            <div class="form-group">
-                <label for="productDesc">Product Description:</label>
-                <textarea class="form-control" type="text" id="productDesc"></textarea>
-            </div>
+        <div class="row">
+            <div class="col-12 col-md-10 m-auto  card p-5">
+                <h2 class="text-center"> CRUD System</h2>
+                <div class="form-group">
+                    <label for="productName">Product Name:</label>
+                    <input class="form-control" type="text" id="productName">
+                </div>
+                <div class="form-group">
+                    <label for="productPrice">Product Price:</label>
+                    <input class="form-control" type="number" id="productPrice">
+                </div>
+                
+                <div class="form-group">
+                    <label for="productCatg">Product Catogrey:</label>
+                    <input class="form-control" type="text" id="productCatg">
+                </div>
+                
+                <div class="form-group">
+                    <label for="productDesc">Product Description:</label>
+                    <textarea class="form-control" type="text" id="productDesc"></textarea>
+                </div>
 
-            <button onclick="addProduct()" class="btn btn-info"> Add Prouduct </button>
-            <button onclick="updateProduct()" class="btn btn-success d-none"> Update Prouduct </button>
+                <button onclick="addProduct()" class="btn btn-info"> Add Prouduct </button>
+                <button onclick="updateProduct()" class="btn btn-success d-none"> Update Prouduct </button>
+            </div>
         </div>
     </div>
 
-    <div class="w-75 m-auto text-center py-3">
-        <input type="text" onkeyup="search()" class="form-control w-75 m-auto" placeholder="Search .." id="searchInput">
+    <div class="row">
+    <div class="col-10 m-auto text-center py-3">
+        <input type="text" onkeyup="search()" class="form-control" placeholder="Search .." id="searchInput">
     
         <table class="table my-5">
             <thead>
@@ -66,6 +69,7 @@
             </tbody>
         </table>
     </div>
+</div>
 
 
 
